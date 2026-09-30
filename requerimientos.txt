@@ -1,0 +1,6 @@
+try:
+    pygame.mixer.music.load("game/assets/juego sonido.mp3")
+    pygame.mixer.music.play(-1)          # loop infinito
+    pygame.mixer.music.set_volume(0.45)  # volumen
+except Exception as e:
+     print("Error cargando música:", e)  
